@@ -14,9 +14,13 @@ class DisplaySettingsActivity : CollapsingToolbarBaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         fragmentManager
-                .beginTransaction()
-                .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, DisplaySettingsFragment(), TAG)
-                .commit()
+            .beginTransaction()
+            .replace(
+                com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+                DisplaySettingsFragment(this),
+                TAG
+            )
+            .commit()
     }
 
     companion object {
