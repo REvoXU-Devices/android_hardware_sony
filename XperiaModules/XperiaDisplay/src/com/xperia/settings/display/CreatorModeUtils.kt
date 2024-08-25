@@ -12,6 +12,8 @@ import android.provider.Settings
 import android.util.Log
 import android.view.View
 
+import lineageos.hardware.LiveDisplayManager
+
 import android.graphics.ColorMatrix
 import android.graphics.ColorMatrixColorFilter
 import androidx.core.content.ContextCompat
